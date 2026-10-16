@@ -6,7 +6,7 @@ from qdrant_client import QdrantClient
 
 load_dotenv()
 
-app = FastAPI(title="ArchLens")
+app = FastAPI(title="SystemAtlas")
 
 neo4j_driver = GraphDatabase.driver(
     os.getenv("NEO4J_URI", "bolt://localhost:7687"),
